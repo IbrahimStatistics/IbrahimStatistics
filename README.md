@@ -58,8 +58,8 @@ An IIoT predictive maintenance platform for detecting motor faults (bearing defe
 
 <h3 align="left">GitHub Stats:</h3>
 <p align="center">
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=ibrahimstatistics&show_icons=true&hide_border=false&bg_color=080810&title_color=bb9af7&icon_color=b8bcd4&text_color=e0def4&border_color=8a8fa8" alt="GitHub Stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ibrahimstatistics&layout=compact&hide_border=false&bg_color=080810&title_color=bb9af7&text_color=e0def4&border_color=8a8fa8" alt="Top Languages" />
+<img height="165" src="https://github-stats-extended.vercel.app/api?username=ibrahimstatistics&show_icons=true&hide_border=false&bg_color=080810&title_color=bb9af7&icon_color=b8bcd4&text_color=e0def4&border_color=8a8fa8" alt="GitHub Stats" />
+<img height="165" src="https://github-stats-extended.vercel.app/api/top-langs/?username=ibrahimstatistics&layout=compact&hide_border=false&bg_color=080810&title_color=bb9af7&text_color=e0def4&border_color=8a8fa8" alt="Top Languages" />
 </p>
 
 <p align="center">
@@ -71,4 +71,3 @@ An IIoT predictive maintenance platform for detecting motor faults (bearing defe
 <p align="center">
 <img src="https://raw.githubusercontent.com/ibrahimstatistics/ibrahimstatistics/output/github-contribution-grid-snake.svg" alt="contribution snake animation" />
 </p>
-<p align="left"><em>⚠️ The snake animation needs a one-time setup — see the note below.</em></p>
