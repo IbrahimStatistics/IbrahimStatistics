@@ -70,4 +70,3 @@ An IIoT predictive maintenance platform for detecting motor faults (bearing defe
 <p align="center">
 <img src="https://raw.githubusercontent.com/ibrahimstatistics/ibrahimstatistics/output/github-contribution-grid-snake.svg" alt="contribution snake animation" />
 </p>
-<p align="left"><em>⚠️ The snake animation needs a one-time setup — see the note below.</em></p>
