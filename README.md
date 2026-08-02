@@ -1,7 +1,7 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,100:161b22&height=180&section=header&text=Ibrahim%20Ahmad&fontSize=48&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=Industrial%20IoT%20%7C%20Predictive%20Maintenance%20Systems&descAlignY=58&descSize=18" alt="header banner" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,35:57708a,70:0e75b6,100:161b22&height=180&section=header&text=Ibrahim%20Ahmad&fontSize=48&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=Industrial%20IoT%20%7C%20Predictive%20Maintenance%20Systems&descAlignY=58&descSize=18" alt="header banner" />
 
 <p align="center">
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=58A6FF&center=true&vCenter=true&width=780&lines=B.Tech+Industrial+IoT+%40+GGSIPU+Delhi;Building+SmartWatch+Manager+(IIoT);MQTT+%C2%B7+FastAPI+%C2%B7+TimescaleDB+%C2%B7+ML;From+Sensor+Physics+to+Production" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=0E75B6&center=true&vCenter=true&width=780&lines=B.Tech+Industrial+IoT+%40+GGSIPU+Delhi;Building+SmartWatch+Manager+(IIoT);MQTT+%C2%B7+FastAPI+%C2%B7+TimescaleDB+%C2%B7+ML;From+Sensor+Physics+to+Production" alt="Typing SVG" />
 </p>
 
 <p align="left">
@@ -58,15 +58,16 @@ An IIoT predictive maintenance platform for detecting motor faults (bearing defe
 
 <h3 align="left">GitHub Stats:</h3>
 <p align="center">
-<img height="165" src="https://github-stats-extended.vercel.app/api?username=ibrahimstatistics&show_icons=true&hide_border=false&bg_color=0d1117&title_color=58a6ff&icon_color=8b949e&text_color=c9d1d9&border_color=30363d" alt="GitHub Stats" />
-<img height="165" src="https://github-stats-extended.vercel.app/api/top-langs/?username=ibrahimstatistics&layout=compact&hide_border=false&bg_color=0d1117&title_color=58a6ff&text_color=c9d1d9&border_color=30363d" alt="Top Languages" />
+<img height="165" src="https://github-stats-extended.vercel.app/api?username=ibrahimstatistics&show_icons=true&hide_border=false&bg_color=0d1117&title_color=0e75b6&icon_color=57708a&text_color=c9d1d9&border_color=30363d" alt="GitHub Stats" />
+<img height="165" src="https://github-stats-extended.vercel.app/api/top-langs/?username=ibrahimstatistics&layout=compact&hide_border=false&bg_color=0d1117&title_color=0e75b6&text_color=c9d1d9&border_color=30363d" alt="Top Languages" />
 </p>
 
 <p align="center">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=ibrahimstatistics&hide_border=false&background=0d1117&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff&sideLabels=c9d1d9&currStreakNum=ffffff&sideNums=c9d1d9&dates=8b949e&stroke=30363d" alt="ibrahimstatistics streak" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=ibrahimstatistics&hide_border=false&background=0d1117&ring=0e75b6&fire=0e75b6&currStreakLabel=0e75b6&sideLabels=c9d1d9&currStreakNum=ffffff&sideNums=c9d1d9&dates=57708a&stroke=30363d" alt="ibrahimstatistics streak" />
 </p>
 
 <h3 align="left">Contribution Snake:</h3>
 <p align="center">
 <img src="https://raw.githubusercontent.com/ibrahimstatistics/ibrahimstatistics/output/github-contribution-grid-snake.svg" alt="contribution snake animation" />
 </p>
+<p align="left"><em>⚠️ The snake animation needs a one-time setup — see the note below.</em></p>
