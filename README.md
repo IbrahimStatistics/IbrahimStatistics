@@ -1,7 +1,7 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0e75b6,100:1ac6ff&height=180&section=header&text=Ibrahim%20Ahmad&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Industrial%20IoT%20%7C%20Predictive%20Maintenance%20Systems&descAlignY=58&descSize=18" alt="header banner" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1a1b27,50:414868,100:c0caf5&height=180&section=header&text=Ibrahim%20Ahmad&fontSize=48&fontColor=ffffff&animation=twinkling&fontAlignY=38&desc=Industrial%20IoT%20%7C%20Predictive%20Maintenance%20Systems&descAlignY=58&descSize=18" alt="header banner" />
 
 <p align="center">
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=0E75B6&center=true&vCenter=true&width=650&lines=B.Tech+Industrial+IoT+%40+USAR%2C+GGSIPU+Delhi;Building+SmartWatch+Manager+%E2%80%94+IIoT+Predictive+Maintenance;MQTT+%C2%B7+FastAPI+%C2%B7+TimescaleDB+%C2%B7+ML+on+Vibration+Data;From+Sensor+Physics+to+Production+Systems" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=C0CAF5&center=true&vCenter=true&width=780&lines=B.Tech+Industrial+IoT+%40+GGSIPU+Delhi;Building+SmartWatch+Manager+(IIoT);MQTT+%C2%B7+FastAPI+%C2%B7+TimescaleDB+%C2%B7+ML;From+Sensor+Physics+to+Production" alt="Typing SVG" />
 </p>
 
 <p align="left">
@@ -70,4 +70,3 @@ An IIoT predictive maintenance platform for detecting motor faults (bearing defe
 <p align="center">
 <img src="https://raw.githubusercontent.com/ibrahimstatistics/ibrahimstatistics/output/github-contribution-grid-snake.svg" alt="contribution snake animation" />
 </p>
-<p align="left"><em>⚠️ The snake animation needs a one-time setup — see the note below.</em></p>
