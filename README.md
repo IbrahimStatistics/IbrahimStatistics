@@ -13,11 +13,12 @@
 An IIoT predictive maintenance platform for detecting motor faults (bearing defects, broken rotor bars) from vibration and current signature data — architected end-to-end across simulation, streaming, storage, and API layers.
 
 - **Hardware-independent development**: `sensor_simulator.py` replays the MAFAULDA broken rotor bar dataset (real industrial vibration/current recordings, read via `h5py` from MATLAB v7.3 HDF5 files) over MQTT with live timestamps — indistinguishable from live ESP32 sensor hardware to every downstream component.
-- **Async ingestion pipeline**: an `aiomqtt` + `asyncpg` consumer subscribes to `iiot/+/+` and writes windowed sensor data into two TimescaleDB hypertables (`telemetry_current`, `telemetry_vibration`), storing raw samples as `DOUBLE PRECISION[]` columns.
-- **Backend API**: FastAPI with JWT authentication, bcrypt password hashing, and CORS middleware, backed by `asyncpg`. Account management scripts (`create_user.py`, `reset_password.py`) support ops.
-- **Verified end-to-end**: simulator → MQTT (Mosquitto) → async consumer → TimescaleDB → authenticated FastAPI endpoints, with `/machines` correctly returning live device data.
+- **Async ingestion pipeline**: an `aiomqtt` + `asyncpg` consumer writes windowed sensor data into two TimescaleDB hypertables (`telemetry_current`, `telemetry_vibration`), storing raw samples as `DOUBLE PRECISION[]` columns.
+- **Versioned, reproducible schema**: a single `schema.sql` now defines both hypertables and the `users` table — no more schema living only inside a running container.
+- **Backend API**: FastAPI with JWT authentication, bcrypt password hashing, and CORS middleware, backed by `asyncpg`. Account management scripts (`create_user.py`, `reset_password.py`) support ops. New `/telemetry/*/summary` endpoints compute per-window RMS server-side (via Postgres `unnest()`), so raw ~55k-sample arrays never cross the network — built for the dashboard's charts.
+- **Verified end-to-end**: simulator → MQTT (Mosquitto) → async consumer → TimescaleDB → authenticated FastAPI endpoints, confirmed via live insert logs and row counts, with `/machines` correctly returning live device data.
 - **Sensor stack**: MEMS vibration (IIS3DWB), CT-based motor current signature analysis, PT100/MAX31865 temperature — chosen from first-principles fault-detection physics (FFT sideband analysis for bearing defect frequencies and rotor bar signatures), not off-the-shelf convenience.
-- **Status**: dataset loader, MQTT simulator, TimescaleDB ingestion, and JWT-authenticated FastAPI backend all working end-to-end. Closing a reproducibility gap next (versioned `schema.sql` migration for the hypertable schemas), then moving to Phase 4 — HIL fault-condition simulation across the MAFAULDA `r1b`–`r4b` broken-bar severity levels.
+- **Status**: dataset loader, MQTT simulator, TimescaleDB ingestion (with versioned schema), and JWT-authenticated FastAPI backend all verified working end-to-end. Currently building the **React + Recharts dashboard** — auth, machine overview, and live telemetry charts against the RMS summary endpoints. A fuller feature-computation layer (independent FFT/RMS worker service, fault-severity labeling for HIL simulation across the MAFAULDA `r1b`–`r4b` broken-bar severity levels) is architected and next in line after the dashboard.
 
 **Stack by layer:**
 | Layer | Tech |
@@ -26,7 +27,7 @@ An IIoT predictive maintenance platform for detecting motor faults (bearing defe
 | Messaging | MQTT (Mosquitto) |
 | Ingestion | Python, `aiomqtt`, `asyncpg` (async consumer) |
 | Backend | Python, FastAPI, JWT auth, bcrypt |
-| Data | PostgreSQL + TimescaleDB (hypertables, Docker) |
+| Data | PostgreSQL + TimescaleDB (hypertables, Docker, versioned `schema.sql`) |
 | ML | Python (fault classification from vibration/current signatures) |
 | Frontend | React, Recharts |
 
